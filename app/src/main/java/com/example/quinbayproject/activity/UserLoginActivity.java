@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -87,6 +88,10 @@ GoogleSignInClient mGoogleSignInClient;
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
         if (account!=null)
         {
+            SharedPreferences sharedPreferences=getSharedPreferences("user",MODE_PRIVATE);
+            SharedPreferences.Editor editor=sharedPreferences.edit();
+            editor.putBoolean("isLoggedIn",true);
+            editor.commit();
             Intent intent=new Intent(this,HomeActivity.class);
             startActivity(intent);
         }
@@ -108,6 +113,11 @@ GoogleSignInClient mGoogleSignInClient;
         RequestQueue queue = Volley.newRequestQueue(this);
         String email=((EditText)findViewById(R.id.ev_log_em)).getText().toString();
         String password=((EditText)findViewById(R.id.ev_log_ps)).getText().toString();
+        if(email=="" || password=="")
+        {
+            Toast.makeText(UserLoginActivity.this,"All fields Required",Toast.LENGTH_SHORT).show();
+            return;
+        }
         String url = "http://"+IP_ADDRESS+"/user/signIn";
         JSONObject jsonObject=new JSONObject();
         try {
@@ -128,6 +138,7 @@ GoogleSignInClient mGoogleSignInClient;
                             SharedPreferences sharedPreferences=getSharedPreferences("TOKEN", MODE_PRIVATE);
                             SharedPreferences.Editor editor=sharedPreferences.edit();
                             editor.putString("token",token);
+                            editor.putBoolean("isLoggedIn",true);
                             editor.commit();
                         }catch (JSONException e){
                             e.printStackTrace();

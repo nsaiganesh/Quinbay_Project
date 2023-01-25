@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -43,7 +44,11 @@ public class UserRegisterActivity extends AppCompatActivity {
         String city=((EditText)findViewById(R.id.ev_city)).getText().toString();
         String state=((EditText)findViewById(R.id.ev_state)).getText().toString();
         String phone=((EditText)findViewById(R.id.ev_ph)).getText().toString();
-
+        if(firstName==""||lastName==""||email==""||password==""||city==""||state==""||phone=="")
+        {
+            Toast.makeText(UserRegisterActivity.this,"All fields Required",Toast.LENGTH_SHORT).show();
+            return;
+        }
         String url = "http://"+IP_ADDRESS+"/user/signup";
         JSONObject jsonObject=new JSONObject();
         try {
