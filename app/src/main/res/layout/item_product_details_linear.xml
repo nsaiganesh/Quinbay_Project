@@ -40,12 +40,12 @@
                     android:layout_height="wrap_content"
                     android:text="@string/product_price"
                     android:textColor="@color/discount_price"/>
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_product_strike_price"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="@string/product_strike_price"-->
-<!--                    android:autoText="true"/>-->
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tv_product_strike_price"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="@string/product_strike_price"-->
+                <!--                    android:autoText="true"/>-->
                 <Button
                     android:id="@+id/btn_view_details"
                     android:layout_width="match_parent"

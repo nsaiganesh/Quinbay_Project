@@ -51,18 +51,18 @@ public class ProductListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-          if(getItemViewType(position)==Constants.LINEAR_LAYOUT) {
-              ((ProductListViewHolderLinear) holder).bind(productsItem.get(position));
-          }
-          else{
-              ((ProductListViewHolderGrid) holder).bind(productsItem.get(position));
-          }
+        if(getItemViewType(position)==Constants.LINEAR_LAYOUT) {
+            ((ProductListViewHolderLinear) holder).bind(productsItem.get(position));
+        }
+        else{
+            ((ProductListViewHolderGrid) holder).bind(productsItem.get(position));
+        }
     }
 
     @Override
     public int getItemCount() {
 
-            return productsItem.size();
+        return productsItem.size();
     }
 
     @Override
