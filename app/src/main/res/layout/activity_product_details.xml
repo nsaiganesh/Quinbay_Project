@@ -25,49 +25,61 @@
         android:id="@+id/tv_pn"
         android:layout_width="360dp"
         android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="249dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_pd" />
 
     <TextView
         android:id="@+id/tv_price"
         android:layout_width="360dp"
         android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="335dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pn" />
 
     <TextView
         android:id="@+id/tv_desc"
         android:layout_width="360dp"
         android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="435dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price" />
 
     <TextView
         android:id="@+id/tv_category"
         android:layout_width="360dp"
         android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="517dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
 
     <Button
         android:id="@+id/btn_addToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
         android:text="Add to cart"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="614dp" />
+        app:layout_constraintStart_toEndOf="@+id/btn_buyNow"
+        app:layout_constraintTop_toBottomOf="@+id/tv_category" />
 
     <Button
         android:id="@+id/btn_buyNow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="50dp"
         android:text="Buy Now"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="614dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_category" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
