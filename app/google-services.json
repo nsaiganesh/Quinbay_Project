@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "724348215576",
+    "project_id": "quinaby-project",
+    "storage_bucket": "quinaby-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724348215576:android:11f5fcaae9f9c254d6fe6d",
+        "android_client_info": {
+          "package_name": "com.example.quinbayproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724348215576-uvpqbhluddg0pfc27bi9sgg12s8c2h6k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quinbayproject",
+            "certificate_hash": "20c512f0f9f5c73adb4f80c019657b3c95b67cdb"
+          }
+        },
+        {
+          "client_id": "724348215576-bqp5c32ff77lakj1tb754i498lpb2fhr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKuiDh-kuiBCa1k3cnWLYivhXmQVYSWk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724348215576-bqp5c32ff77lakj1tb754i498lpb2fhr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
