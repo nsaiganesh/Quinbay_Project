@@ -12,7 +12,7 @@
     tools:context=".ProductDetailsActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_pd"
         android:layout_width="361dp"
         android:layout_height="219dp"
         android:layout_marginStart="4dp"
@@ -22,7 +22,7 @@
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/tv_pn"
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:text="TextView"
@@ -30,7 +30,7 @@
         tools:layout_editor_absoluteY="249dp" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/tv_price"
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:text="TextView"
@@ -38,7 +38,7 @@
         tools:layout_editor_absoluteY="335dp" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/tv_desc"
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:text="TextView"
@@ -46,7 +46,7 @@
         tools:layout_editor_absoluteY="435dp" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/tv_category"
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:text="TextView"

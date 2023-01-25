@@ -117,6 +117,12 @@ public class ProductsItem implements Serializable {
 
 	@SerializedName("status")
 	private String status;
+	@SerializedName("desc")
+	private String desc;
+	public String getDesc()
+	{
+		return desc;
+	}
 
 	public StoreClosingInfo getStoreClosingInfo(){
 		return storeClosingInfo;
